@@ -3,157 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRMasters | Gestão de Pessoas</title>
+    <title>HRMasters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Sans+3&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="app">
-    <aside class="sidebar">
-        <a class="brand" href="#inicio">
-            <span class="brand-mark">HR</span>
-            <span><strong>HRMasters</strong><small>Gestão de Pessoas</small></span>
-        </a>
+    <header>
+        <img src="logo.png" alt="HRMasters">
+        <p>Pessoas em primeiro lugar, dados no lugar certo.</p>
+    </header>
 
-        <div class="nav-label">MENU PRINCIPAL</div>
-        <nav class="navigation">
-            <a class="nav-link selected" href="#inicio"><span class="nav-icon">▦</span> Dashboard</a>
-            <a class="nav-link" href="#funcionarios"><span class="nav-icon">♙</span> Funcionários</a>
-            <a class="nav-link" href="#cadastro"><span class="nav-icon">＋</span> Cadastrar funcionário</a>
-            <a class="nav-link" href="#departamentos"><span class="nav-icon">▤</span> Departamentos</a>
-        </nav>
-
-        <div class="sidebar-bottom">
-            <div class="avatar admin-avatar">AD</div>
-            <div><strong>Administrador</strong><small>Área administrativa</small></div>
-            <span class="more">•••</span>
-        </div>
-    </aside>
-
-    <main class="main-content">
-        <header class="topbar">
-            <div class="search-box"><span>⌕</span><input type="search" placeholder="Pesquisar no sistema..."><kbd>Ctrl + K</kbd></div>
-            <div class="top-actions"><span class="online"><i></i> Sistema online</span><span class="top-avatar">AD</span></div>
-        </header>
-
-        <section class="page-heading" id="inicio">
-            <div><div class="eyebrow">PAINEL DE CONTROLE</div><h1>Dashboard</h1><p>Acompanhe os principais dados da sua equipe em um só lugar.</p></div>
-            <div class="heading-date"><span>▣</span> 07 de novembro de 2026</div>
-        </section>
-
-        <section class="stats">
-            <article class="stat-card">
-                <div class="stat-head"><span>Total de funcionários</span><span class="stat-icon icon-blue">♙</span></div>
-                <div class="stat-number">120</div><div class="stat-foot"><span class="trend">↗ 8,5%</span> em relação ao mês passado</div>
-            </article>
-            <article class="stat-card">
-                <div class="stat-head"><span>Funcionários ativos</span><span class="stat-icon icon-green">✓</span></div>
-                <div class="stat-number">100</div><div class="stat-foot"><span class="trend">↗ 5,2%</span> em relação ao mês passado</div>
-            </article>
-            <article class="stat-card">
-                <div class="stat-head"><span>Funcionários inativos</span><span class="stat-icon icon-orange">−</span></div>
-                <div class="stat-number">20</div><div class="stat-foot muted-foot">Fora do quadro ativo</div>
-            </article>
-            <article class="stat-card">
-                <div class="stat-head"><span>Departamentos</span><span class="stat-icon icon-purple">▤</span></div>
-                <div class="stat-number">05</div><div class="stat-foot muted-foot">Setores cadastrados</div>
-            </article>
-        </section>
-
-        <section class="dashboard-grid">
-            <article class="panel performance">
-                <div class="panel-title"><div><h2>Visão geral da equipe</h2><p>Distribuição de funcionários por situação</p></div><button class="outline-button">Este mês⌄</button></div>
-                <div class="chart-summary">
-                    <div><small>Total de funcionários</small><strong>120</strong></div>
-                    <div><small>Ativos</small><strong class="green-text">100</strong></div>
-                    <div><small>Inativos</small><strong class="orange-text">20</strong></div>
-                </div>
-                <div class="bar-chart">
-                    <div class="y-labels"><span>120</span><span>90</span><span>60</span><span>30</span><span>0</span></div>
-                    <div class="bars">
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:82%"></div></div><small>Jan</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:68%"></div></div><small>Fev</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:73%"></div></div><small>Mar</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:76%"></div></div><small>Abr</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:88%"></div></div><small>Mai</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:91%"></div></div><small>Jun</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:95%"></div></div><small>Jul</small></div>
-                        <div class="bar-column"><div class="bar-track"><div class="bar-fill" style="height:100%"></div></div><small>Ago</small></div>
-                    </div>
-                </div>
-                <div class="chart-legend"><span><i class="legend-blue"></i> Funcionários cadastrados</span><span><i class="legend-light"></i> Meta do período</span></div>
-            </article>
-
-            <article class="panel departments-panel">
-                <div class="panel-title"><div><h2>Departamentos</h2><p>Distribuição da equipe</p></div><a href="#departamentos" class="see-all">Ver todos →</a></div>
-                <div class="donut-area"><div class="donut"><div class="donut-center"><strong>120</strong><small>Pessoas</small></div></div></div>
-                <div class="legend-list">
-                    <div><i class="dot dot-blue"></i><span>Administrativo</span><b>32</b></div>
-                    <div><i class="dot dot-green"></i><span>Financeiro</span><b>24</b></div>
-                    <div><i class="dot dot-purple"></i><span>Recursos Humanos</span><b>18</b></div>
-                    <div><i class="dot dot-orange"></i><span>Tecnologia</span><b>46</b></div>
-                </div>
-            </article>
-        </section>
-
-        <section class="panel employees-panel" id="funcionarios">
-            <div class="panel-title"><div><h2>Funcionários recentes</h2><p>Confira os últimos registros da empresa.</p></div><a href="#funcionarios" class="see-all">Ver funcionários →</a></div>
-            <div class="table-responsive">
-                <table id="funcionarios-table">
-                    <thead>
-                        <tr><th>FUNCIONÁRIO</th><th>CARGO</th><th>DEPARTAMENTO</th><th>DATA DE ADMISSÃO</th><th>STATUS</th><th>AÇÕES</th></tr>
-                    </thead>
-                    <tbody>
-                        <!-- Preenchido automaticamente pelo script.js -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="panel form-section" id="cadastro">
-            <div class="panel-title"><div><h2>Cadastro de funcionário</h2><p>Preencha os dados para registrar um novo funcionário.</p></div></div>
-            <form class="employee-form">
-                <label>Nome completo<input type="text" name="nome" placeholder="Digite o nome completo"></label>
-                <label>CPF<input type="text" name="cpf" placeholder="000.000.000-00"></label>
-                <label>E-mail<input type="email" name="email" placeholder="nome@empresa.com"></label>
-                <label>Telefone<input type="tel" name="telefone" placeholder="(00) 00000-0000"></label>
-                <label>Cargo<input type="text" name="cargo" placeholder="Cargo do funcionário"></label>
-                <label>Departamento
-                    <select name="departamento">
-                        <option value="">Selecione um departamento</option>
-                        <option value="Administrativo">Administrativo</option>
-                        <option value="Financeiro">Financeiro</option>
-                        <option value="Recursos Humanos">Recursos Humanos</option>
-                        <option value="Tecnologia">Tecnologia</option>
-                    </select>
-                </label>
-                <label>Data de admissão<input type="date" name="dataAdmissao"></label>
-                <label>Salário<input type="number" name="salario" placeholder="R$ 0,00" min="0" step="0.01"></label>
-                <label>Status
-                    <select name="status">
-                        <option value="ativo">Ativo</option>
-                        <option value="inativo">Inativo</option>
-                    </select>
-                </label>
-                <div class="form-button">
-                    <button type="submit" class="primary-button">Cadastrar funcionário</button>
-                    <button type="button" class="secondary-button" id="btn-cancelar" hidden>Cancelar edição</button>
-                </div>
+    <main>
+        <section>
+            <h2>Cadastro de funcionário</h2>
+            <form id="formulario">
+                <input type="text" name="nome" placeholder="Nome completo" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+                <input type="text" name="cargo" placeholder="Cargo" required>
+                <select name="departamento" required>
+                    <option value="">Departamento</option>
+                    <option>Administrativo</option>
+                    <option>Financeiro</option>
+                    <option>Recursos Humanos</option>
+                    <option>Tecnologia</option>
+                </select>
+                <input type="number" name="salario" placeholder="Salário" min="0" required>
+                <button type="submit" id="botao">Cadastrar</button>
             </form>
         </section>
 
-        <section class="panel department-section" id="departamentos">
-            <div class="panel-title"><div><h2>Gerenciamento de departamentos</h2><p>Setores cadastrados na empresa.</p></div></div>
-            <div class="department-cards">
-                <article><span class="department-symbol blue-bg">AD</span><div><b>Administrativo</b><small>32 funcionários</small></div></article>
-                <article><span class="department-symbol green-bg">FI</span><div><b>Financeiro</b><small>24 funcionários</small></div></article>
-                <article><span class="department-symbol purple-bg">RH</span><div><b>Recursos Humanos</b><small>18 funcionários</small></div></article>
-                <article><span class="department-symbol orange-bg">TI</span><div><b>Tecnologia</b><small>46 funcionários</small></div></article>
-            </div>
+        <section>
+            <h2>Funcionários</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                        <th>Departamento</th>
+                        <th>Salário</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista"></tbody>
+            </table>
         </section>
     </main>
-</div>
-<footer>HRMasters © 2026 · Sistema de Gestão de Recursos Humanos</footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
