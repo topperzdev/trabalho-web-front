@@ -24,6 +24,7 @@ function mostrar() {
                 <td>
                     <button onclick="editar(${i})">Editar</button>
                     <button onclick="arquivar(${i})">${f.ativo ? 'Arquivar' : 'Reativar'}</button>
+                    <button onclick="excluir(${i})">Excluir</button>
                 </td>
             </tr>`;
     });
@@ -45,6 +46,17 @@ function arquivar(i) {
     funcionarios[i].ativo = !funcionarios[i].ativo;
     salvar();
     mostrar();
+}
+
+function excluir(i) {
+    if (confirm('Deseja excluir este funcionário?')) {
+        funcionarios.splice(i, 1);
+        editando = null;
+        botao.textContent = 'Cadastrar';
+        form.reset();
+        salvar();
+        mostrar();
+    }
 }
 
 form.addEventListener('submit', function (e) {
